@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeWork5</title>
+    <title>HomeWork6</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -46,9 +46,38 @@
         </section>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button data-modal-close type="button" class="link">
+                <button data-modal-close type="button" class="link close">
                     <svg><use href="./img/symbol-defs.svg#icon-close"></use></svg>
                 </button>
+                <form class="form-bd">
+                    <p>Leave your contacts and we will call you back</p>
+                    <div class="form-field-bd">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="name">
+                    </div>
+                
+                    <div class="form-field-bd">
+                        <label for="tel">Phone</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+            
+                    <div class="form-field-bd">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                
+                    <div class="form-field-bd">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" rows="8" placeholder="Text input"></textarea>
+                    </div>
+                
+                    <div class="form-field-bd-check">
+                        <input type="checkbox" name="" value="" id="checkbox">
+                        <label for="checkbox">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
         <section class="margin-top">
@@ -286,6 +315,15 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <p class="media-p">Subscribe</p>
+                <form class="form-f">
+                    <input type="mail" name="mail" id="mail" placeholder="E-mail">
+                    <button type="submit">Subscribe
+                        <svg><use href="./img/symbol-defs.svg#icon-send"></use></svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
