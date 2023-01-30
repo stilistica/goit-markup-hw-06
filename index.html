@@ -51,30 +51,34 @@
                 </button>
                 <form class="form-bd">
                     <p>Leave your contacts and we will call you back</p>
-                    <div class="form-field-bd">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="name">
-                    </div>
+                        <label  class="label-name label-bd form-field-bd">
+                            <span>Name</span>
+                            <input type="text" name="name">
+                            <svg class="form-icon" width="12px" height="12px"><use href="./img/symbol-defs.svg#icon-name"></use></svg>
+                        </label>
                 
-                    <div class="form-field-bd">
-                        <label for="tel">Phone</label>
-                        <input type="tel" name="tel" id="tel">
-                    </div>
+                        <label class="label-bd form-field-bd">
+                            <span>Phone</span>
+                            <input type="tel" name="tel">
+                            <svg class="form-icon" width="13px" height="13px"><use href="./img/symbol-defs.svg#icon-tel"></use></svg>
+                        </label>
             
-                    <div class="form-field-bd">
-                        <label for="mail">Email</label>
-                        <input type="email" name="mail" id="mail">
-                    </div>
+                        <label class="label-bd form-field-bd">
+                            <span>Email</span>
+                            <input type="email" name="mail">
+                            <svg class="form-icon" width="15px" height="12px"><use href="./img/symbol-defs.svg#icon-mail"></use></svg>
+                        </label>
                 
-                    <div class="form-field-bd">
-                        <label for="comment">Comment</label>
-                        <textarea name="comment" id="comment" rows="8" placeholder="Text input"></textarea>
-                    </div>
+                        <label class="label-bd label-bd-com form-field-bd">
+                            <span>Comment</span>
+                            <textarea name="comment" rows="8" placeholder="Text input"></textarea>
+                        </label>
                 
-                    <div class="form-field-bd-check">
-                        <input type="checkbox" name="" value="" id="checkbox">
-                        <label for="checkbox">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
-                    </div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">
+                            <span class="che-icon"></span>
+                            <span class="text-check">I accept the terms and conditions of the <a href=""> Privacy Policy</a></span>
+                        </label>
 
                     <button type="submit">Send</button>
                 </form>
