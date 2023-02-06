@@ -186,12 +186,12 @@ img {
     pointer-events: none;
 }
 .modal {
+    padding: 72px 24px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 584px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -227,17 +227,14 @@ img {
 .modal button.close:hover svg, .modal button.close:focus svg {
     fill: var(--white);
 }
-.form-bd {
-    padding: 72px 24px 24px;
-}
+
 .form-bd p {
     margin: 0 0 14px;
     text-align: center;
     letter-spacing: 0.02em;
 
-    color: #2E2F42;
+    color: var(--accent-color);
 
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -341,11 +338,31 @@ textarea {
     line-height: 1.33;
     letter-spacing: 0.04em;
 }
+.text-check a {
+    color: var(--selection);
+}
 .checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
+/* .text-check::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42; 
+    border-radius: 2px;
+    display: block;
+    margin-right: 9px;
+}
+.checkbox:checked + .text-check::before {
+    background-color: var(--hero-button);
+    border: 1.25px solid var(--hero-button);
+    background-image: url(../img/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+} */
 .che-icon {
     display: inline-block;
     margin-right: 9px;
@@ -353,21 +370,22 @@ textarea {
     height: 16px;
     border: 1.25px solid #2E2F42; 
     border-radius: 2px;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} 
 
 .checkbox:checked + .che-icon {
     background-color: var(--hero-button);
     border: 1.25px solid var(--hero-button);
-    background-image: url('../img/symbol-defs.svg#icon-on');
-    background-size: contain;
-    background-origin: border-box;
+    background-image: url(../img/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 /* button */
 .form-bd button {
-    display: flex;
+    display: block;
     margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
@@ -377,9 +395,6 @@ textarea {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
     letter-spacing: 0.04em;
 
     color: var(--white);
@@ -716,13 +731,14 @@ textarea {
 .foot-a:focus {
     background: #31D0AA;
 }
-.foot-d-two {
-    margin-right: 80px;
+.foot-d-three {
+    margin-left: auto;
 }
 .form-f {
     display: flex;
 }
 .form-f input {
+    color: var(--fcwhite);
     width: 264px;
     /* height: 40px; */
     margin: 0;
